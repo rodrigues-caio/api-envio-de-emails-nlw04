@@ -27,7 +27,7 @@ class NpsController {
 
     const totalAnswers = surveysUsers.length;
 
-    const calcute = Number(
+    const calculate = Number(
       (((promoters - detractor) / totalAnswers) * 100).toFixed(2)
     );
 
@@ -36,7 +36,7 @@ class NpsController {
       promoters,
       passive,
       totalAnswers,
-      nps: calcute,
+      nps: calculate,
     });
   }
 }
